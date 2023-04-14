@@ -93,3 +93,7 @@ body::before {
     color: var(--BUTTON-COLOR);
     font-weight: bold;
 }
+
+.font_sm {
+    font-size: 15px;
+}
