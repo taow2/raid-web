@@ -13,17 +13,17 @@
 
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light py-2 fixed-top logo_red">
+    <nav class="navbar navbar-expand-lg navbar-light p-0 fixed-top logo_red">
         <div class="container">
-            <a href="index.html" class="d-flex align-items-center navbar-brand">                
-                <img src="img/raid.png" alt="raid" class="bg-light rounded-circle" width="42px" height="45px">
+            <a href="index.html" class="nav_white d-flex align-items-center navbar-brand px-5">                
+                <img src="img/racing.png" alt="raid" width="42px" height="45px">
                 <h3 class="pt-1 px-2">Racing Dynamics</h3>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto ">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a href="about.html" class="nav-link"><strong>About Us</strong></a>
                     </li>
@@ -48,14 +48,14 @@
     <section class="about_bg text-dark p-3 text-center text-sm-start">
         <div class="container">
             <div class="d-sm-flex align-items-center justify-content-between">
-                <div>
-                    <img src="img/raid.png" class="w-50">
-                    <h1>Racing Dynamics</h1>
-                </div>
                 <div class="text-center">
                     <img src="img/350e.png" class="w-75">
                 </div>
-                <div>
+                <div class="py-2 text-center">
+                  <img src="img/racing.png" class="w-50">
+                  <h1>Racing Dynamics</h1>
+                </div>
+                <div class="py-5 text-end">
                     <h2>An Unmanned Vehicle Integration Company</h2>
                 </div>
             </div>
@@ -63,18 +63,15 @@
     </section>
 
     <!--News & Topics-->
-    <section class="bg-light text-dark p-4 p-lg-0 py-lg-4 text-center text-sm-start">
+    <section class="bg-light text-dark p-4 p-lg-0 py-lg-4 text-start">
         <div class="container">
             <h2>News & Topics</h2>
             <ul class="list-group">
                 <li class="list-group-item"><time class="pe-5">2023/03/31</time><a href="news.html"><span class="nowrap">TADTE 2023 Info</span></a></li>
             </ul>
-            <!--
-            <div class="d-sm-flex p-3 align-items-center justify-content-start">
-                <time>2023/03/31</time>
-                <a href="news.html" class="mx-5"><span class="nowrap">TADTE 2023 Info</span></a>
-            </div>
-            -->
+            <ul class="list-group">
+                <li class="list-group-item"><time class="pe-5">2023/04/17</time><a href="news_23_04_17.html"><span class="nowrap">2023 SelectUSA Summit</span></a></li>
+            </ul>
         </div>
     </section>    
 
@@ -98,7 +95,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
-                      Do you guys manufacture and sell any UAV?
+                      Do you guys sell any UAV? Is your business outsourced? 
                     </button>
                   </h2>
                   <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
@@ -131,7 +128,7 @@
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
-                      What are your unique advantages among similar companies?
+                      How many employees do you have?
                     </button>
                   </h2>
                   <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
@@ -143,7 +140,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="p-5 logo_red text-white text-center position-relative">
+    <footer class="p-3 logo_red text-white text-center position-relative">
       <div class="container">
           <p class="lead">Copyright &copy; 2023 Racing Dynamics</p>
 
