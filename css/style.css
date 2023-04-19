@@ -8,6 +8,10 @@ body::before {
     background-color: rgba(201, 20, 20);
 }
 
+.sky_blue {
+    background-color: rgb(111, 203, 253)
+}
+
 .nav_white {
     background-color: whitesmoke;
 }
