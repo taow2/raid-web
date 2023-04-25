@@ -17,7 +17,7 @@
         <div class="container">
             <a href="index.html" class="nav_white d-flex align-items-center navbar-brand px-3">                
                 <img src="img/racing.png" alt="raid" width="42px" height="45px">
-                <h3 class="pt-1 px-2">Racing Dynamics</h3>
+                <h3 id="brand" class="pt-1 px-2">Racing Dynamics</h3>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -51,7 +51,7 @@
             <div class="row p-4">
                 <div class="col-md-4 pb-3">
                     <ul id="news_list" class="list-group">
-                        <li class="list-group-item"><time class="pe-5">2023/03/31</time><a href="news.html"><span class="nowrap">TADTE 2023</span></a></li>
+                        <li class="list-group-item"><time class="pe-5">2023/03/31</time><a href="news.html"><span class="nowrap">TADTE</span></a></li>
                         <li class="list-group-item"><time class="pe-5">2023/04/17</time><a href="news_23_04_17.html"><span class="nowrap">SelectUSA</span></a></li>
                     </ul>
                 </div>
@@ -61,13 +61,14 @@
                             <img src="img/xpo.png" alt="XPO" class="img-fluid pb-3">
                             <div class="container border">
                                 <p><a href="https://www.xponential.org/xponential2023/Public/Enter.aspx" target="_blank" rel="noreferrer noopener">Offical Website</a></p>
-                                <p>5/8 - 5/11</p>
+                                <p>May 8-11</p>
+                                <hr>
                                 <p>Colorado Convention Center</p>
                                 <p>700 14th St, Denver, CO 80202</p>
                             </div>
                         </div>
                         <div class="container pt-4">
-                            <p>There will be no exhitbits from Racing Dynamics. We are simply attending as visitors.</p>
+                            <p>There will be no exhibit from Racing Dynamics. We are simply attending as visitors.</p>
                         </div>
                     </div>
                 </div>
@@ -78,9 +79,9 @@
 
 
     <!-- Footer -->
-    <footer class="p-3 logo_red text-white text-center position-relative">
+    <footer id="foot" class="p-3 logo_red text-white text-center position-relative">
         <div class="container">
-            <p class="lead">Copyright &copy; 2023 Racing Dynamics</p>
+            <p class="lead">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Racing Dynamics</p>
   
             <a href="#" class="position-fixed bottom-0 end-0 p-5">
                 <i class="bi bi-arrow-up-circle h1"></i>

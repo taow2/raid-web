@@ -17,7 +17,7 @@
         <div class="container">
             <a href="index.html" class="nav_white d-flex align-items-center navbar-brand px-3">                
                 <img src="img/racing.png" alt="raid" width="42px" height="45px">
-                <h3 class="pt-1 px-2">Racing Dynamics</h3>
+                <h3 id="brand" class="pt-1 px-2">Racing Dynamics</h3>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -67,14 +67,14 @@
         <div class="container">
             <h2>News & Topics</h2>
             <ul id="news_list" class="list-group">
-                <li class="list-group-item"><time class="pe-5">2023/03/31</time><a href="news.html"><span class="nowrap">TADTE 2023</span></a></li>
+                <li class="list-group-item"><time class="pe-5">2023/03/31</time><a href="news.html"><span class="nowrap">TADTE</span></a></li>
                 <li class="list-group-item"><time class="pe-5">2023/04/17</time><a href="news_23_04_17.html"><span class="nowrap">SelectUSA</span></a></li>
             </ul>
         </div>
     </section>    
 
     <!--Latest Products-->
-    <section class="bg-warning text-dark p-4 p-lg-0 pt-lg-4 text-center text-sm-start">
+    <section class="sky_blue text-dark p-4 p-lg-0 pt-lg-4 text-center text-sm-start">
       <div class="container">
         <h2>Latest Products</h2>
           <div class="container pt-4">
@@ -83,20 +83,19 @@
                 <img src="img/600h.png" alt="600h" class="img-fluid w-75">
               </div>
               <div class="col-sm">
-                <h4 class="pb-4">Maddos VTOL 600h</h4>
-                <p>A UAV with a wingspan of 600 cm</p>
-                <p>Capable of both military and commercial applications</p>
-                <p>Has a 25kg payload with 10 hr endurance</p> 
+                <h3 class="pb-4">Maddos VTOL 600h</h3>
+                <p>Wingspan: 600 cm</p>
+                <p>Payload: 25kg</p>
+                <p>Endurance: 10hr</p> 
               </div>
             </div>
             <hr>
             <div class="row text-center">
               <div class="col-sm">
-                <h4 class="pb-4 pt-sm-5">Maddos RF Detectors</h4>
-                <p>A passive detection of radio frequency signal</p>
-                <p>Able to detect any drone and its pilot</p>
-                <p>Has a detection range up to 35km in rural, 10km in urban</p>
-                <p>Both portable and stationary verisons are available</p>
+                <h3 class="pb-4 pt-sm-5">Maddos RF Detectors</h3>
+                <p>Radio Frequency Passive Detection</p>
+                <p>Detection range: 35km(rural), 10km(urban)</p>
+                <p>Portable/Stationary Options</p>
               </div>
               <div class="col">                            
                 <img src="img/raid/rf_detection.png" alt="rf" class="img-fluid w-75">
@@ -160,7 +159,7 @@
       <div class="container">
         <h2 class="pb-4">Contact Info</h2>
         <p>
-          2F., No.27-2, Jilin Rd., Zhongli Dist., Taoyuan City 320, Taiwan
+          2F. 27-2, Jilin Rd., Zhongli Dist., Taoyuan City 32026, Taiwan
         </p>
         <p>Tel: +886 9788 16577</p>
       </div>
@@ -170,7 +169,8 @@
     <!-- Footer -->
     <footer id="foot" class="p-3 logo_red text-white text-center position-relative">
       <div class="container">
-          <p class="lead">Copyright &copy; 2023 Racing Dynamics</p>
+          <p class="lead">Copyright &copy; <script>document.write(new Date().getFullYear())</script>
+            Racing Dynamics</p>
 
           <a href="#" class="position-fixed bottom-0 end-0 p-5">
               <i class="bi bi-arrow-up-circle h1"></i>
