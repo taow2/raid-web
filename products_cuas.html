@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body-id" class="d-none">
     <!--Navbar-->
     <nav id="nav_id" class="navbar navbar-expand-lg navbar-light p-0 fixed-top logo_red">
         <div class="container">
@@ -24,58 +24,69 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link"><strong>About Us</strong></a>
+                        <a href="about.html" class="nav-link"><strong><span class="eng">About Us</span><span class="cn d-none">關於我們</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><strong>Products & Services</strong></a>
+                        <a href="products.html" class="nav-link"><strong><span class="eng">Products & Services</span><span class="cn d-none">產品和服務</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="partners.html" class="nav-link"><strong>Partnerships</strong></a>
+                        <a href="partners.html" class="nav-link"><strong><span class="eng">Partnerships</span><span class="cn d-none">合作夥伴</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="news.html" class="nav-link"><strong>News</strong></a>
+                        <a href="news.html" class="nav-link"><strong><span class="eng">News</span><span class="cn d-none">新聞</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link"><strong>Contact Us</strong></a>
+                        <a href="contact.html" class="nav-link"><strong><span class="eng">Contact Us</span><span class="cn d-none">聯絡我們</span></strong></a>
                     </li>
                 </ul>    
             </div>
         </div>
     </nav>
 
+    <button class="float-end" id="switch-lang" onclick="switch_lang()"><span class="eng">切換到中文</span><span class="cn d-none">Switch to Eng</span></button>
+
     <!--Content-->
     <section class="p-4 p-lg-0 pt-lg-4">
         <div class="container">
-            <h1>Products & Services</h1>
+            <h1><span class="eng">Products & Services</span><span class="cn d-none">產品和服務</span></h1>
             <div class="d-xl-flex d-sm-block p-4">
                 <ul class="list-group list-group-flush pe-5">
                     <li class="list-group-item"><a href="products.html">UAV</a></li>
                     <li class="list-group-item"><span class="nowrap">C-UAS</span></li>
                 </ul>
                 <div class="container px-2">
-                    <h2 class="py-2">Counter-Unmanned Aircraft Station</h2>
-                    <p>The anti-drone solution is another product line of <a href="https://maddos.pl/" target="_blank" rel="noreferrer noopener">Maddos</a>. </p>
-                    <p>It offers a great varitey of options to neutralize the threat of any kind of drone.</p>
-                    <p>Click the image to get more info on that product:</p>
+                    <h2 class="py-2"><span class="eng">Counter-Unmanned Aircraft Station</span><span class="cn d-none">無人機反制系統</span></h2>
+                    <p>
+                        <span class="eng">The anti-drone solution is another product line of <a href="https://maddos.pl/" target="_blank" rel="noreferrer noopener">MADDOS</a>.</span>
+                        <span class="cn d-none">針對無人機的各種反制設備是<a href="https://maddos.pl/" target="_blank" rel="noreferrer noopener">MADDOS</a>的另一條產品線。</span>
+                    </p>
+                    <p>
+                        <span class="eng">It offers a great varitey of options to neutralize the threat of any kind of drone.</span>
+                        <span class="cn d-none">此系列的產品提供了各種選項來解決敵方無人機所帶來的威脅。</span>
+                    </p>
+                    <p>
+                        <span class="eng">Click the image to get more info on that product:</span>
+                        <span class="cn d-none">請點擊下列圖片以取得更多資訊:</span>
+                    </p>
 
                     <div class="container">
                         <div class="row text-center">
                             <div class="col border">
                                 <a href="https://maddos.pl/radars/" target="_blank" rel="noreferrer noopener">
                                     <img src="img/cuas/radar.png" alt="" height="200px" width="146px">
-                                    <h3>Radar</h3>
+                                    <h3><span class="eng">Radar</span><span class="cn d-none">雷達</span></h3>
                                 </a>
                             </div>
                             <div class="col border">
                                 <a href="https://maddos.pl/rf-detection/" target="_blank" rel="noreferrer noopener">
                                     <img src="img/cuas/rf.png" alt="" height="200px" width="146px">
-                                    <h3>RF Detector</h3>
+                                    <h3><span class="eng">RF Detector</span><span class="cn d-none">RF 探測器</span></h3>
                                 </a>
                             </div>
                             <div class="col border">
                                 <a href="https://maddos.pl/jammers/" target="_blank" rel="noreferrer noopener">
                                     <img src="img/cuas/jammer.jpg" alt="" height="200px" width="146px">
-                                    <h3>Jammers</h3>
+                                    <h3><span class="eng">Jammers</span><span class="cn d-none">干擾器</span></h3>
                                 </a>
                             </div>
                         </div>

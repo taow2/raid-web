@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body-id" class="d-none">
     <!--Navbar-->
     <nav id="nav_id" class="navbar navbar-expand-lg navbar-light p-0 fixed-top logo_red">
         <div class="container">
@@ -24,44 +24,52 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link"><strong>About Us</strong></a>
+                        <a href="about.html" class="nav-link"><strong><span class="eng">About Us</span><span class="cn d-none">關於我們</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><strong>Products & Services</strong></a>
+                        <a href="products.html" class="nav-link"><strong><span class="eng">Products & Services</span><span class="cn d-none">產品和服務</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="partners.html" class="nav-link"><strong>Partnerships</strong></a>
+                        <a href="partners.html" class="nav-link"><strong><span class="eng">Partnerships</span><span class="cn d-none">合作夥伴</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="news.html" class="nav-link"><strong>News</strong></a>
+                        <a href="news.html" class="nav-link"><strong><span class="eng">News</span><span class="cn d-none">新聞</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link"><strong>Contact Us</strong></a>
+                        <a href="contact.html" class="nav-link"><strong><span class="eng">Contact Us</span><span class="cn d-none">聯絡我們</span></strong></a>
                     </li>
                 </ul>    
             </div>
         </div>
     </nav>
 
+    <button class="float-end" id="switch-lang" onclick="switch_lang()"><span class="eng">切換到中文</span><span class="cn d-none">Switch to Eng</span></button>
+
     <!--Content-->
     <section class="p-4 p-lg-0 pt-lg-4">
         <div class="container">
-            <h1>Products & Services</h1>
+            <h1><span class="eng">Products & Services</span><span class="cn d-none">產品和服務</span></h1>
             <div class="d-xl-flex d-sm-block p-4">
                 <ul class="list-group list-group-flush pe-5">
                     <li class="list-group-item">UAV</li>
                     <li class="list-group-item"><a href="products_cuas.html"><span class="nowrap">C-UAS</span></a></li>
                 </ul>
                 <div class="container px-2">
-                    <h2 class="py-2">Unmanned Aircraft Vehicle</h2>
-                    <p>We are currently the exlsuive representive of the Poland UAV company <a href="https://maddos.pl/" target="_blank" rel="noreferrer noopener">MADDOS</a> in Taiwan. </p>
-                    <p>The UAV products from MADDOS available for sale here are listed below: </p>
+                    <h2 class="py-2"><span class="eng">Unmanned Aircraft Vehicle</span><span class="cn d-none">無人飛行機</span></h2>
+                    <p>
+                        <span class="eng">We are currently the exlsuive representive of the Poland UAV company <a href="https://maddos.pl/" target="_blank" rel="noreferrer noopener">MADDOS</a> in Taiwan.</span>
+                        <span class="cn d-none">本公司現為波蘭無人飛行機公司<a href="https://maddos.pl/" target="_blank" rel="noreferrer noopener">MADDOS</a>在台灣的獨家代理商。</span> 
+                    </p>
+                    <p>
+                        <span class="eng">The UAV products from MADDOS available for sale here are listed below: </span>
+                        <span class="cn d-none">目前我們能販售的MADDOS無人機產品如下所列: </span> 
+                    </p>
                     
                     <table class="d-none d-sm-block table table-bordered">
                         <thead>
                             <tr class="text-center">
                                 <th scope="col">UAV</th>
-                                <th scope="col">Spec</th>
+                                <th scope="col"><span class="eng">Spec</span><span class="cn d-none">規格</span></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -71,14 +79,14 @@
                                     <h3 class="py-2">VTOL 350e</h3>
                                 </th>
                                 <td>
-                                    <p>3.5m wingspan</p>
-                                    <p>3h endurance</p>
-                                    <p>Electric propulsion</p>
-                                    <p>22kg MTOW</p>
-                                    <p>4kg payload weight</p>
-                                    <p>Cruise speed: 72 km/h</p>
-                                    <p>Max speed:  112 km/h</p>
-                                    <p>Wind resistance (take-off): up to 40km/h</p>
+                                    <p><span class="eng">3.5m wingspan</span><span class="cn d-none">翼展: 3.5m</span></p>
+                                    <p><span class="eng">3h endurance</span><span class="cn d-none">續航: 3 hr</span></p>
+                                    <p><span class="eng">Electric propulsion</span><span class="cn d-none">電動推進</span></p>
+                                    <p><span class="eng">22kg MTOW</span><span class="cn d-none">最大起飛重量: 22 kg</span></p>
+                                    <p><span class="eng">4kg payload weight</span><span class="cn d-none">酬載重量: 4 kg</span></p>
+                                    <p><span class="eng">Cruise speed: 72 km/h</span><span class="cn d-none">平均速度: 72 km/hr</span></p>
+                                    <p><span class="eng">Max speed: 112 km/h</span><span class="cn d-none">最高速度: 112 km/hr</span></p>
+                                    <p><span class="eng">Wind resistance (take-off): up to 40 km/h</span><span class="cn d-none">最大抗風: 40 km/hr</span></p>
                                 </td>
                             </tr>
                             <tr>
@@ -87,13 +95,13 @@
                                     <h3 class="py-2">VTOL 600h</h3>
                                 </th>
                                 <td>
-                                    <p>6m wingspan</p>
-                                    <p>10h+ endurance</p>
-                                    <p>Hybrid propulsion (electric + gasoline)</p>
-                                    <p>110kg MTOW</p>
-                                    <p>25kg payload weight</p>
-                                    <p>Cruise speed: 100 - 110 km/h</p>
-                                    <p>Max speed: 140 km/h</p>
+                                    <p><span class="eng">6m wingspan</span><span class="cn d-none">翼展: 6m</span></p>
+                                    <p><span class="eng">10h endurance</span><span class="cn d-none">續航: 10 hr</span></p>
+                                    <p><span class="eng">Hybrid propulsion (electric + gasoline)</span><span class="cn d-none">油電混合動力</span></p>
+                                    <p><span class="eng">110kg MTOW</span><span class="cn d-none">最大起飛重量: 110 kg</span></p>
+                                    <p><span class="eng">25kg payload weight</span><span class="cn d-none">酬載重量: 25 kg</span></p>
+                                    <p><span class="eng">Cruise speed: 100-110 km/h</span><span class="cn d-none">平均速度: 100-110 km/hr</span></p>
+                                    <p><span class="eng">Max speed: 140 km/h</span><span class="cn d-none">最高速度: 140 km/hr</span></p>
                                 </td>
                             </tr>
                         </tbody>
@@ -104,27 +112,27 @@
                             <img src="img/350e.png" alt="350e" class="img-fluid w-75">
                             <h3 class="py-2">350e</h3>
                             <div class="container border-top">                                
-                                <p>3.5m wingspan</p>
-                                <p>3h endurance</p>
-                                <p>Electric propulsion</p>
-                                <p>22kg MTOW</p>
-                                <p>4kg payload weight</p>
-                                <p>Cruise speed: 72 km/h</p>
-                                <p>Max speed:  112 km/h</p>
-                                <p>Wind resistance (take-off): up to 40km/h</p>
+                                <p><span class="eng">3.5m wingspan</span><span class="cn d-none">翼展: 3.5m</span></p>
+                                <p><span class="eng">3h endurance</span><span class="cn d-none">續航: 3hr</span></p>
+                                <p><span class="eng">Electric propulsion</span><span class="cn d-none">電動推進</span></p>
+                                <p><span class="eng">22kg MTOW</span><span class="cn d-none">最大起飛重量: 22 kg</span></p>
+                                <p><span class="eng">4kg payload weight</span><span class="cn d-none">酬載重量: 4 kg</span></p>
+                                <p><span class="eng">Cruise speed: 72 km/h</span><span class="cn d-none">平均速度: 72 km/hr</span></p>
+                                <p><span class="eng">Max speed: 112 km/h</span><span class="cn d-none">最高速度: 112 km/hr</span></p>
+                                <p><span class="eng">Wind resistance (take-off): up to 40 km/h</span><span class="cn d-none">最大抗風: 40 km/hr</span></p>
                             </div>
                         </div>
                         <div class="container border">
                             <img src="img/600h.png" alt="600h" class="img-fluid">
                             <h3 class="py-2">600h</h3>
                             <div class="container border-top">
-                                <p>6m wingspan</p>
-                                <p>10h+ endurance</p>
-                                <p>Hybrid propulsion (electric + gasoline)</p>
-                                <p>110kg MTOW</p>
-                                <p>25kg payload weight</p>
-                                <p>Cruise speed: 100 - 110 km/h</p>
-                                <p>Max speed: 140 km/h</p>
+                                <p><span class="eng">6m wingspan</span><span class="cn d-none">翼展: 6m</span></p>
+                                <p><span class="eng">10h endurance</span><span class="cn d-none">續航: 10 hr</span></p>
+                                <p><span class="eng">Hybrid propulsion (electric + gasoline)</span><span class="cn d-none">油電混合動力</span></p>
+                                <p><span class="eng">110kg MTOW</span><span class="cn d-none">最大起飛重量: 110 kg</span></p>
+                                <p><span class="eng">25kg payload weight</span><span class="cn d-none">酬載重量: 25 kg</span></p>
+                                <p><span class="eng">Cruise speed: 100-110 km/h</span><span class="cn d-none">平均速度: 100-110 km/hr</span></p>
+                                <p><span class="eng">Max speed: 140 km/h</span><span class="cn d-none">最高速度: 140 km/hr</span></p>
                             </div>
                         </div>
                     </div>                

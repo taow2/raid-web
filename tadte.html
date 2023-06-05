@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body-id" class="d-none">
     <!--Navbar-->
     <nav id="nav_id" class="navbar navbar-expand-lg navbar-light p-0 fixed-top logo_red">
         <div class="container">
@@ -24,38 +24,40 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link"><strong>About Us</strong></a>
+                        <a href="about.html" class="nav-link"><strong><span class="eng">About Us</span><span class="cn d-none">關於我們</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="products.html" class="nav-link"><strong>Products & Services</strong></a>
+                        <a href="products.html" class="nav-link"><strong><span class="eng">Products & Services</span><span class="cn d-none">產品和服務</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="partners.html" class="nav-link"><strong>Partnerships</strong></a>
+                        <a href="partners.html" class="nav-link"><strong><span class="eng">Partnerships</span><span class="cn d-none">合作夥伴</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="news.html" class="nav-link"><strong>News</strong></a>
+                        <a href="news.html" class="nav-link"><strong><span class="eng">News</span><span class="cn d-none">新聞</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link"><strong>Contact Us</strong></a>
+                        <a href="contact.html" class="nav-link"><strong><span class="eng">Contact Us</span><span class="cn d-none">聯絡我們</span></strong></a>
                     </li>
                 </ul>    
             </div>
         </div>
     </nav>
 
-    <h1 class="text-center pt-4">TADTE Associated Exhibits</h1>
+    <button class="float-end" id="switch-lang" onclick="switch_lang()"><span class="eng">切換到中文</span><span class="cn d-none">Switch to Eng</span></button>
+
+    <h1 class="text-center pt-4"><span class="eng">TADTE Associated Exhibits</span><span class="cn d-none">台北國際航太展-參展產品</span></h1>
 
     <!--REI Products-->
     <section class="p-4 p-lg-0 pt-lg-4">
         <div class="container">
-            <h3>REI</h3>
+            <h3><span class="eng">REI</span><span class="cn d-none">六俊</span></h3>
             <a href="tadte_data/rei_tadte.pdf" target="_blank" rel="noreferrer noopener">PDF</a>
             <div class="row text-center g-4">
                 <div class="col-lg-3 col-md-6">
                     <div class="h-100 card text-dark sky_blue border-0">
                         <div class="card-body text-center">
                             <img src="img/rei/motor.png" alt="motor" class="rounded mt-4" height="105px" width="210px">
-                            <h5 class="card-title mt-3">Motor</h5>
+                            <h5 class="card-title mt-3"><span class="eng">DC/AC Motor</span><span class="cn d-none">直流/交流馬達</span></h5>
                         </div>
                     </div> 
                 </div>
@@ -63,7 +65,7 @@
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/rei/resolver.png" alt="resolver" class="rounded" height="140px" width="210px">                            
-                            <h5 class="card-title mt-3">Resolver</h5>
+                            <h5 class="card-title mt-3"><span class="eng">Resolver</span><span class="cn d-none">解角器</span></h5>
                         </div>
                     </div> 
                 </div>
@@ -71,7 +73,7 @@
                     <div class="h-100 card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/rei/Actuator.jpg" alt="actuator" class="rounded mt-2">
-                            <h5 class="card-title mt-3">Actuator</h5>
+                            <h5 class="card-title mt-3"><span class="eng">Actuator</span><span class="cn d-none">致動器</span></h5>
                         </div>
                     </div> 
                 </div>
@@ -79,7 +81,7 @@
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/rei/generator.png" alt="generator" class="rounded" height="140px" width="210px">
-                            <h5 class="card-title mt-3">Generator</h5>
+                            <h5 class="card-title mt-3"><span class="eng">Generator</span><span class="cn d-none">機載發電機</span></h5>
                         </div>
                     </div> 
                 </div>
@@ -87,7 +89,7 @@
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/rei/controller.png" alt="controller" class="rounded" height="159px" width="210px">
-                            <h5 class="card-title mt-3">Gimbal Positioning Contoller</h5>
+                            <h5 class="card-title mt-3"><span class="eng">Gimbal Positioning Contoller</span><span class="cn d-none">雲台定位控制器</span></h5>
                         </div>
                     </div> 
                 </div>
@@ -95,7 +97,7 @@
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/rei/torque.png" alt="torque" class="rounded" height="185px" width="210px">
-                            <h5 class="card-title mt-3">Torque Motor</h5>
+                            <h5 class="card-title mt-3"><span class="eng">Torque Motor</span><span class="cn d-none">扭力馬達</span></h5>
                         </div>
                     </div> 
                 </div>
@@ -103,7 +105,7 @@
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/rei/positioner.png" alt="positioner" class="rounded" height="160px" width="210px">
-                            <h5 class="card-title mt-3">Actuator Control Positioner</h5>
+                            <h5 class="card-title mt-3"><span class="eng">Actuator Control Positioner</span><span class="cn d-none">致動器控制位置</span></h5>
                         </div>
                     </div> 
                 </div>
@@ -121,7 +123,7 @@
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/raid/350e_2.png" alt="350e" class="img-fluid rounded">
-                            <h3 class="card-title mt-3">UAV VTOL 350e</h3>
+                            <h3 class="card-title mt-3"><span class="eng">UAV</span><span class="cn d-none">無人機</span> VTOL 350e</h3>
                             <a class="text-dark" href="tadte_data/vtol350e_en.pdf" target="_blank" rel="noreferrer noopener">PDF</a>
                         </div>
                     </div> 
@@ -130,7 +132,7 @@
                     <div class="h-100 card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/raid/600h_2.jpg" alt="600h" class="img-fluid rounded mt-lg-3">
-                            <h3 class="card-title mt-3">UAV VTOL 600h</h3>
+                            <h3 class="card-title mt-3"><span class="eng">UAV</span><span class="cn d-none">無人機</span> VTOL 600h</h3>
                             <a class="text-dark" href="tadte_data/vtol600h_en.pdf" target="_blank" rel="noreferrer noopener">PDF</a>
                         </div>
                     </div> 
@@ -139,7 +141,7 @@
                     <div class="h-100 card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/raid/rf_detection.png" alt="RF" class="img-fluid rounded mt-lg-5">
-                            <h3 class="card-title mt-3">RF Detection</h3>
+                            <h3 class="card-title mt-3">RF <span class="eng">Detection</span><span class="cn d-none">探測器</span></h3>
                             <a class="text-dark" href="tadte_data/ppar448_en.pdf" target="_blank" rel="noreferrer noopener">PDF</a>
                         </div>
                     </div> 
@@ -148,7 +150,7 @@
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/raid/jammer.jpg" alt="jammer" class="img-fluid rounded">
-                            <h3 class="card-title mt-3">Jammer Gun</h3>
+                            <h3 class="card-title mt-3"><span class="eng">Jammer Gun</span><span class="cn d-none">電子干擾槍</span></h3>
                             <a class="text-dark" href="tadte_data/hj7_en.pdf" target="_blank" rel="noreferrer noopener">PDF</a>
                         </div>
                     </div> 
@@ -161,13 +163,13 @@
     <!--TCO products-->
     <section class="p-4 p-lg-0 pt-lg-4">
         <div class="container">
-            <h3>TCO</h3>
+            <h3><span class="eng">TCO</span><span class="cn d-none">彩光</span></h3>
             <div class="row text-center g-4">
                 <div class="col-lg-3 col-md-6">
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/tco/tlc40.jpg" alt="TLC40" class="rounded" height="200px" width="227px">
-                            <h3 class="card-title mt-3">TLC40 LiDAR Module</h3>
+                            <h3 class="card-title mt-3">TLC40 <span class="eng">LiDAR Module</span><span class="cn d-none">光達模組</span></h3>
                         </div>
                     </div>
                 </div>
@@ -175,7 +177,7 @@
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/tco/tlm120.jpg" alt="TLM120" class="img-fluid rounded">
-                            <h3 class="card-title mt-3">TLM120 LiDAR Module</h3>
+                            <h3 class="card-title mt-3">TLM120 <span class="eng">LiDAR Module</span><span class="cn d-none">光達模組</span></h3>
                         </div>
                     </div>
                 </div>
@@ -183,7 +185,7 @@
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/tco/tlf70.jpg" alt="TLF70" class="img-fluid rounded">
-                            <h3 class="card-title mt-3">TLF70 LiDAR Module</h3>
+                            <h3 class="card-title mt-3">TLF70 <span class="eng">LiDAR Module</span><span class="cn d-none">光達模組</span></h3>
                             <a class="text-dark" href="tadte_data/lidar_70_120_en.pdf" target="_blank" rel="noreferrer noopener">PDF</a>
                         </div>
                     </div>
@@ -192,7 +194,7 @@
                     <div class="h-100 card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/tco/tlf120.jpg" alt="TLF120" class="rounded mt-lg-4" height="200px" width="233px">
-                            <h3 class="card-title mt-3">TLF120 LiDAR Module</h3>
+                            <h3 class="card-title mt-3">TLF120 <span class="eng">LiDAR Module</span><span class="cn d-none">光達模組</span></h3>
                             <a class="text-dark" href="tadte_data/lidar_70_120_en.pdf" target="_blank" rel="noreferrer noopener">PDF</a>
                         </div>
                     </div>
@@ -205,13 +207,13 @@
     <!--POS products-->
     <section class="p-4 p-lg-0 pt-lg-4">
         <div class="container">
-            <h3>POS</h3>
+            <h3><span class="eng">POS</span><span class="cn d-none">海神</span></h3>
             <div class="row text-center g-4">
                 <div class="col-md-6">
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/pos/lifebuoy.jpg" alt="LB1200" class="img-fluid rounded">
-                            <h3 class="card-title mt-3">LB1200 Lifebuoy</h3>
+                            <h3 class="card-title mt-3">LB1200 <span class="eng">Lifebuoy</span><span class="cn d-none">搖控救生圈</span></h3>
                         </div>
                     </div>
                 </div>
@@ -223,13 +225,13 @@
     <!--CCIT products-->
     <section class="p-4 p-lg-0 pt-lg-4">
         <div class="container pb-3">
-            <h3>CCIT</h3>
+            <h3><span class="eng">CCIT</span><span class="cn d-none">國防大學理工學院</span></h3>
             <div class="row text-center g-4">
                 <div class="col">
                     <div class="card sky_blue border-0 text-dark">
                         <div class="card-body text-center">
                             <img src="img/ccit/crp.png" alt="crp" class="img-fluid rounded">
-                            <h3 class="card-title mt-3">180°Coaxial Reverse Blades Unmanned Helicopter</h3>
+                            <h3 class="card-title mt-3">180°<span class="eng">Coaxial Reverse Blades Unmanned Helicopter</span><span class="cn d-none">同軸反槳無人直升機</span></h3>
                             <a class="text-dark" href="tadte_data/180_en.pdf" target="_blank" rel="noreferrer noopener">PDF</a>
                         </div>
                     </div>

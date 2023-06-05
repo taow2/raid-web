@@ -11,38 +11,40 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body-id" class="d-none">
     <!--Navbar-->
     <nav id="nav_id" class="navbar navbar-expand-lg navbar-light p-0 fixed-top logo_red">
-        <div class="container">
-            <a href="index.html" class="nav_white d-flex align-items-center navbar-brand px-3">                
-                <img src="img/racing.png" alt="raid" width="42px" height="45px">
-                <h3 id="brand" class="pt-1 px-2">Racing Dynamics</h3>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="about.html" class="nav-link"><strong>About Us</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="products.html" class="nav-link"><strong>Products & Services</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="partners.html" class="nav-link"><strong>Partnerships</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="news.html" class="nav-link"><strong>News</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="contact.html" class="nav-link"><strong>Contact Us</strong></a>
-                    </li>
-                </ul>    
-            </div>
-        </div>
+      <div class="container">
+          <a href="index.html" class="nav_white d-flex align-items-center navbar-brand px-3">                
+              <img src="img/racing.png" alt="raid" width="42px" height="45px">
+              <h3 id="brand" class="pt-1 px-2">Racing Dynamics</h3>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navmenu">
+              <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                      <a href="about.html" class="nav-link"><strong><span class="eng">About Us</span><span class="cn d-none">關於我們</span></strong></a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="products.html" class="nav-link"><strong><span class="eng">Products & Services</span><span class="cn d-none">產品和服務</span></strong></a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="partners.html" class="nav-link"><strong><span class="eng">Partnerships</span><span class="cn d-none">合作夥伴</span></strong></a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="news.html" class="nav-link"><strong><span class="eng">News</span><span class="cn d-none">新聞</span></strong></a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="contact.html" class="nav-link"><strong><span class="eng">Contact Us</span><span class="cn d-none">聯絡我們</span></strong></a>
+                  </li>
+              </ul>    
+          </div>
+      </div>
     </nav>
+
+    <button class="float-end" id="switch-lang" onclick="switch_lang()"><span class="eng">切換到中文</span><span class="cn d-none">Switch to Eng</span></button>
 
     <!--About-->
     <section class="about_bg text-dark p-3 text-center text-sm-start">
@@ -56,7 +58,7 @@
                   <h1 class="pt-3">Racing Dynamics</h1>
                 </div>
                 <div class="py-3 text-sm-end">
-                    <h2>An Unmanned Vehicle Integration Company</h2>
+                    <h2><span class="eng">An Unmanned Vehicle Integration Company</span><span class="cn d-none">從無到有 全新成立 <span class="nowrap">無人機整合公司</span></span></h2>
                 </div>
             </div>
         </div>
@@ -65,7 +67,7 @@
     <!--News & Topics-->
     <section class="bg-light text-dark p-4 p-lg-0 py-lg-4 text-start">
         <div class="container">
-            <h2>News & Topics</h2>
+            <h2><span class="eng">News & Topics</span><span class="cn d-none">新聞與消息</span></h2>
             <ul id="news_list" class="list-group">
                 <li class="list-group-item"><time class="pe-5">2023/03/31</time><a href="news.html"><span class="nowrap">TADTE</span></a></li>
                 <li class="list-group-item"><time class="pe-5">2023/04/17</time><a href="news_23_04_17.html"><span class="nowrap">SelectUSA</span></a></li>
@@ -74,94 +76,63 @@
     </section>    
 
     <!--Latest Products-->
-    <section class="sky_blue text-dark p-4 p-lg-0 pt-lg-4 text-center text-sm-start">
+
+
+
+    <section class="sky_blue p-4">
       <div class="container">
-        <h2>Latest Products</h2>
-          <div class="container pt-4">
-            <div class="row text-center">
-              <div class="col">                            
-                <img src="img/600h.png" alt="600h" class="img-fluid w-75">
+          <h2><span class="eng">Latest Products</span><span class="cn d-none">最新產品</span></h2>
+          <div class="row text-center g-4 pt-2">
+              <div class="col-md">
+                  <div class="h-100 card bg-dark text-light">
+                      <div class="card-body text-center">
+                          <div class="ratio ratio-16x9">
+                            <iframe class="embed-responsive-item pb-2" src="https://www.youtube.com/embed/Myb_D0iMlic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
+                          <h3 class="card-title mb-3 text-decoration-underline">
+                            Maddos VTOL 350e <span class="eng"></span><span class="cn d-none">無人機</span>
+                          </h3>
+                          <p><span class="eng">Wingspan</span><span class="cn d-none">翼展</span>: 350 cm</p>
+                          <p><span class="eng">Payload</span><span class="cn d-none">酬載</span>: 4kg</p>
+                          <p><span class="eng">Endurance</span><span class="cn d-none">續航</span>: 3hr</p>                          
+                          <a href="products.html" class="btn btn-primary"><span class="eng">More Info</span><span class="cn d-none">更多資訊</span></a>
+                      </div>
+                  </div>
               </div>
-              <div class="col-sm fst-italic">
-                <h3 class="pb-4 text-decoration-underline">Maddos VTOL 600h</h3>
-                <p>Wingspan: 600 cm</p>
-                <p>Payload: 25kg</p>
-                <p>Endurance: 10hr</p> 
+              <div class="col-md">
+                  <div class="card bg-secondary text-light h-100">
+                      <div class="card-body text-center">
+                          <div class="h1 mb-3">
+                            <img src="img/raid/rf_detection.png" alt="rf" class="img-fluid w-50">
+                          </div>
+                          <h3 class="card-title mb-3 pt-4 text-decoration-underline">
+                            Maddos RF <span class="eng">Detectors</span><span class="cn d-none">探測器</span>
+                          </h3>
+                          <p><span class="eng">Radio Frequency Passive Detection</span><span class="cn d-none">無線電頻率被動偵測</span></p>
+                          <p><span class="eng">Detection range: 35km(rural), 10km(urban)</span><span class="cn d-none">偵測範圍: 35km(平地), 10km(市區) </span></p>
+                          <p><span class="eng">Portable/Stationary Options</span><span class="cn d-none">可攜/固定選項</span></p>
+                          <a href="products_cuas.html" class="btn btn-dark"><span class="eng">More Info</span><span class="cn d-none">更多資訊</span></a>
+                      </div>
+                  </div>
               </div>
-            </div>
-            <hr>
-            <div class="row text-center">
-              <div class="col-sm fst-italic">
-                <h3 class="pb-4 pt-sm-5 text-decoration-underline">Maddos RF Detectors</h3>
-                <p>Radio Frequency Passive Detection</p>
-                <p>Detection range: 35km(rural), 10km(urban)</p>
-                <p>Portable/Stationary Options</p>
-              </div>
-              <div class="col">                            
-                <img src="img/raid/rf_detection.png" alt="rf" class="img-fluid w-75">
-              </div>
-            </div>
           </div>
       </div>
     </section>
-        
-    <!--
-    <section id="questions" class="p-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-            <div class="accordion accordion-flush" id="questions">
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
-                      Do you guys sell any UAV? Is your business outsourced? 
-                    </button>
-                  </h2>
-                  <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
-                    <div class="accordion-body">Answer</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
-                      What do you mean by UAV integration?
-                    </button>
-                  </h2>
-                  <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
-                    <div class="accordion-body">Answer</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
-                      What should I do if I want to purchace your products?
-                    </button>
-                  </h2>
-                  <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
-                    <div class="accordion-body">Answer</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
-                      How many employees do you have?
-                    </button>
-                  </h2>
-                  <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
-                    <div class="accordion-body">Answer</div>
-                  </div>
-                </div>
-              </div>
-        </div>
-    </section>
-    -->
-
+    
+    <!-- Contact Info -->
     <section class="p-3">
-      <div class="container">
-        <h2 class="pb-4">Contact Info</h2>
-        <p>
-          2F. 27-2, Jilin Rd., Zhongli Dist., Taoyuan City 32026, Taiwan
-        </p>
-        <p>Tel: +886 9788 16577</p>
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="container">
+          <h2 class="pb-4"><span class="eng">Contact Info</span><span class="cn d-none">聯絡資訊</span></h2>
+          <p>
+            <span class="eng">2F. 27-2, Jilin Rd., Zhongli Dist., Taoyuan City 32026, Taiwan</span>
+            <span class="cn d-none">桃園市中壢區文化里吉林路27-2號2樓</span>
+          </p>
+          <p>Tel: +886 9788 16577</p>
+        </div>
+        <class class="container">
+          <img src="img/logo_new.png" alt="REI" class="img-fluid">
+        </class>
       </div>
     </section>
 
@@ -178,9 +149,9 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
     <script src="js/main.js"></script>
     <script src="js/news.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
 </body>
 
 </html>

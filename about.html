@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="body-id" class="d-none">
     <!--Navbar-->
     <nav id="nav_id" class="navbar navbar-expand-lg navbar-light p-0 fixed-top logo_red">
         <div class="container">
@@ -24,43 +24,49 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><strong>About Us</strong></a>
+                        <a href="about.html" class="nav-link"><strong><span class="eng">About Us</span><span class="cn d-none">關於我們</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="products.html" class="nav-link"><strong>Products & Services</strong></a>
+                        <a href="products.html" class="nav-link"><strong><span class="eng">Products & Services</span><span class="cn d-none">產品和服務</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="partners.html" class="nav-link"><strong>Partnerships</strong></a>
+                        <a href="partners.html" class="nav-link"><strong><span class="eng">Partnerships</span><span class="cn d-none">合作夥伴</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="news.html" class="nav-link"><strong>News</strong></a>
+                        <a href="news.html" class="nav-link"><strong><span class="eng">News</span><span class="cn d-none">新聞</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link"><strong>Contact Us</strong></a>
+                        <a href="contact.html" class="nav-link"><strong><span class="eng">Contact Us</span><span class="cn d-none">聯絡我們</span></strong></a>
                     </li>
                 </ul>    
             </div>
         </div>
     </nav>
+
+    <button class="float-end" id="switch-lang" onclick="switch_lang()"><span class="eng">切換到中文</span><span class="cn d-none">Switch to Eng</span></button>
     
     <!--Content-->
     <section class="p-4 p-lg-0 pt-lg-4 d-lg-flex align-items-center">
         <div class="container ps-md-5 ms-lg-5">
-            <h3 class="pb-3">About Us</h3>
+            <h3 class="pb-3"><span class="eng">About Us</span><span class="cn d-none">關於我們</span></h3>
             <p>
-                Racing Dynamics is a newly business development unit of Racing Electric Instrument co. ltd.
-                The <a href="https://www.racing.com.tw/list/isms-policy.htm">ISMS</a> policy of REI is applied here. 
+                <span class="eng">Racing Dynamics is a newly business development unit of Racing Electric Instrument co. ltd.
+                The <a href="https://www.racing.com.tw/list/isms-policy.htm">ISMS</a> policy of REI is applied here.</span>
+                <span class="cn d-none">Racing Dynamics是一家由六俊電機儀具公司所成立的新事業開發部。</span> 
+                <span class="cn d-none">我們與六俊遵守著同樣的<a href="https://www.racing.com.tw/list/isms-policy.htm">資通安全政策</a>。</span>
             </p>               
             <p>
-                We are founded on November 2022. With the primary focus on unmanned aircraft system integration.
+                <span class="eng">We are founded on November 2022. With the primary focus on unmanned aircraft system integration.</span>
+                <span class="cn d-none">我們成立於2022年11月，目前專注在無人機系統的整合。</span>
             </p>
             <p>
-                Our business can mainly be classified into 2 categories, the domestic division and the foreign division.
+                <span class="eng">Our business can mainly be classified into 2 categories, the domestic division and the foreign division.</span>
+                <span class="cn d-none">本開發部大致上可分兩個部分，本土分部和國外分部。</span>
             </p>            
         </div>
         <div class="container text-center pt-3">
             <img src="img/logo_new.png" alt="REI" class="figure-img img-fluid">
-            <p><a href="https://www.racing.com.tw/" target="_blank" rel="noreferrer noopener">Racing Electric Instrument co. ltd</a></p>
+            <p><a href="https://www.racing.com.tw/" target="_blank" rel="noreferrer noopener"><span class="eng">Racing Electric Instrument co. ltd</span><span class="cn d-none">六俊電機儀具股份有限公司</span></a></p>
         </div>        
     </section>
 
@@ -71,11 +77,13 @@
             <div class="row align-items-center justify-content-between">
                 <div class="col-md p-4">
                     <p class="lead">
-                        Together with the affiliated unicorn companies, we intend to utilize our capabilities of rapid prototyping and small scale production in aerospace defense industry.                   
+                        <span class="eng">Together with the affiliated unicorn companies, we intend to utilize our capabilities of rapid prototyping and small scale production in aerospace defense industry.</span>
+                        <span class="cn d-none">本土分部致力於和獨角獸公司同盟合作，期待能把我們在航空產業中快速打樣與小規模生產的優勢發揮到最大。</span>                   
                     </p>
-                    <p>Address:</p>
+                    <p><span class="eng">Address</span><span class="cn d-none">地址</span>:</p>
                     <p>
-                        2F. 27-2, Jilin Rd., Zhongli Dist., Taoyuan City 32026, Taiwan
+                        <span class="eng">2F. 27-2, Jilin Rd., Zhongli Dist., Taoyuan City 32026, Taiwan</span>
+                        <span class="cn d-none">桃園市中壢區文化里吉林路27-2號2樓</span>
                     </p>
                 </div>
                 <div class="col-md">
@@ -95,10 +103,12 @@
                 </div>
                 <div class="col-md p-4">
                     <p class="lead">
-                        The foreign division focuses on project joint developments with companies from aboard.
+                        <span class="eng">The foreign division focuses on project joint developments with companies from aboard.</span>
+                        <span class="cn d-none">國外分部則專注於和外國公司在個別專案上的合作。</span>
                     </p>
                     <p class="lead">
-                        We hope that the joint ventures can leverage our team's capacity and capability.
+                        <span class="eng">We hope that the joint ventures can leverage our team's capacity and capability.</span>
+                        <span class="cn d-none">我們希望這些專案能最大程度上運用我們團隊的能力。</span>
                     </p>
                 </div>
             </div>

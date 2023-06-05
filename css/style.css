@@ -16,13 +16,23 @@ body::before {
     background-color: whitesmoke;
 }
 
-.nav-item {
-    border-left:1pt solid grey;
+@media screen and (min-width: 992px) {
+    .nav-item {
+        border-left:1pt solid grey;
+    }
+
+    .nav-item:last-child {
+        border-right:1pt solid grey;
+    }
 }
 
-.nav-item:last-child {
-    border-right:1pt solid grey;
+@media screen and (max-width: 992px) {
+    .nav-item {
+        border-top:1pt solid grey;
+    }
+
 }
+
 
 .nowrap {
     white-space: nowrap;	

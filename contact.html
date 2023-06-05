@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body-id" class="d-none">
     <!--Navbar-->
     <nav id="nav_id" class="navbar navbar-expand-lg navbar-light p-0 fixed-top logo_red">
         <div class="container">
@@ -23,50 +23,50 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto ">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link"><strong>About Us</strong></a>
+                        <a href="about.html" class="nav-link"><strong><span class="eng">About Us</span><span class="cn d-none">關於我們</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="products.html" class="nav-link"><strong>Products & Services</strong></a>
+                        <a href="products.html" class="nav-link"><strong><span class="eng">Products & Services</span><span class="cn d-none">產品和服務</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="partners.html" class="nav-link"><strong>Partnerships</strong></a>
+                        <a href="partners.html" class="nav-link"><strong><span class="eng">Partnerships</span><span class="cn d-none">合作夥伴</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="news.html" class="nav-link"><strong>News</strong></a>
+                        <a href="news.html" class="nav-link"><strong><span class="eng">News</span><span class="cn d-none">新聞</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><strong>Contact Us</strong></a>
+                        <a href="contact.html" class="nav-link"><strong><span class="eng">Contact Us</span><span class="cn d-none">聯絡我們</span></strong></a>
                     </li>
                 </ul>    
             </div>
         </div>
     </nav>
 
+    <button class="float-end" id="switch-lang" onclick="switch_lang()"><span class="eng">切換到中文</span><span class="cn d-none">Switch to Eng</span></button>
+
     <!--Contact From-->
     <article class="main__article contact p-5">
-        <h2 class="contact__h2 pb-4">Contact Form</h2>
+        <h2 class="contact__h2 pb-4"><span class="eng">Contact Us</span><span class="cn d-none">聯絡我們</span></h2>
         <form action="https://formsubmit.co/zxcvbnmlx0@gmail.com" method="POST">
             <fieldset class="contact__fieldset">
-                <legend class="offscreen">Send Us A Message</legend>
                 <p class="contact_p">
-                    <label for="name" class="contact__label">Name:</label>
-                    <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
+                    <label for="name" class="contact__label"><span class="eng">Name</span><span class="cn d-none">姓名</span>:</label>
+                    <input class="contact__input" type="text" name="name" id="name" required>
                 </p>
                 <p class="contact__p">
                     <label for="email" class="contact__label">Email:</label>
-                    <input class="contact__input" type="email" name="email" id="email" placeholder="your email" required>
+                    <input class="contact__input" type="email" name="email" id="email" required>
                 </p>
                 <p class="contact__p">
-                    <label for="message" class="contact__label">Your Message:</label>
+                    <label for="message" class="contact__label"><span class="eng">Your Message</span><span class="cn d-none">內容</span>:</label>
                     <br>
-                    <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"
-                        placeholder="Type your message here"></textarea>
+                    <textarea class="contact__textarea" name="message" id="message" cols="30" rows="10"></textarea>
                 </p>
             </fieldset>
-            <button class="contact__button" type="submit">Send</button>
-            <button class="contact__button" type="reset">Reset</button>
+            <button class="contact__button" type="submit"><span class="eng">Send</span><span class="cn d-none">送出</span></button>
+            <button class="contact__button" type="reset"><span class="eng">Reset</span><span class="cn d-none">重設</span></button>
         </form>
     </article>
 

@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body-id" class="d-none">
     <!--Navbar-->
     <nav id="nav_id" class="navbar navbar-expand-lg navbar-light p-0 fixed-top logo_red">
         <div class="container">
@@ -25,30 +25,32 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link"><strong>About Us</strong></a>
+                        <a href="about.html" class="nav-link"><strong><span class="eng">About Us</span><span class="cn d-none">關於我們</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="products.html" class="nav-link"><strong>Products & Services</strong></a>
+                        <a href="products.html" class="nav-link"><strong><span class="eng">Products & Services</span><span class="cn d-none">產品和服務</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="partners.html" class="nav-link"><strong>Partnerships</strong></a>
+                        <a href="partners.html" class="nav-link"><strong><span class="eng">Partnerships</span><span class="cn d-none">合作夥伴</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><strong>News</strong></a>
+                        <a href="news.html" class="nav-link"><strong><span class="eng">News</span><span class="cn d-none">新聞</span></strong></a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link"><strong>Contact Us</strong></a>
+                        <a href="contact.html" class="nav-link"><strong><span class="eng">Contact Us</span><span class="cn d-none">聯絡我們</span></strong></a>
                     </li>
                 </ul>    
             </div>
         </div>
     </nav>
 
+    <button class="float-end" id="switch-lang" onclick="switch_lang()"><span class="eng">切換到中文</span><span class="cn d-none">Switch to Eng</span></button>
+
     <!--News-->
 
     <section class="p-4 p-lg-0 pt-lg-4">
         <div class="container">
-            <h1>News</h1>
+            <h1><span class="eng">News</span><span class="cn d-none">新聞</span></h1>
             <div class="row p-4">
                 <div class="col-md-4 pb-3">
                     <ul id="news_list" class="list-group">
@@ -61,7 +63,7 @@
                         <div class="container">
                             <img src="img/selectusa_sm.png" alt="selectUSA" class="img-fluid pb-3">
                             <div class="container border">
-                                <p><a href="https://www.selectusasummit.us/" target="_blank" rel="noreferrer noopener">Offical Website</a></p>
+                                <p class="pt-3"><a class="btn btn-secondary" href="https://www.selectusasummit.us/" target="_blank" rel="noreferrer noopener"><span class="eng">Offical Website</span><span class="cn d-none">官網</span></a></p>
                                 <hr>
                                 <p>Gaylord National Resort and Convention Center</p>
                                 <p>201 Waterfront Street</p>
@@ -69,7 +71,10 @@
                             </div>
                         </div>
                         <div class="container pt-4">
-                            <p>A convention where investors, companies and industry experts alike can connect with each other. Racing Dynamics will be one of the attendents.</p>
+                            <p>
+                                <span class="eng">A convention where investors, companies and industry experts alike can connect with each other. Racing Dynamics will be one of the attendents.</span>
+                                <span class="cn d-none">一個屬於各路投資者、廠商和業界專家的聚會。Racing Dynamics也是參與其中的一家廠商。</span>
+                            </p>
                         </div>
                     </div>
                 </div>
