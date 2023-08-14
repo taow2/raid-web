@@ -1,4 +1,4 @@
-//for preventing JS flickering
+// Prevent JS flickering
 let body = document.getElementById('body-id');
 body.classList.remove('d-none');
 

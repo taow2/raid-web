@@ -4,6 +4,10 @@ body::before {
     height: 50px;
 }
 
+.current {
+    background-color: aquamarine;
+}
+
 .logo_red {
     background-color: rgba(201, 20, 20);
 }
