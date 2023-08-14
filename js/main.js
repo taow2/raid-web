@@ -19,9 +19,6 @@ nav_bar.appendChild(nav_item);
 let text_eng = document.querySelectorAll('.eng');
 let text_cn = document.querySelectorAll('.cn');
 
-console.log(text_eng.length);
-console.log(text_cn.length);
-
 if(localStorage.getItem("language") == null || localStorage.getItem("language") == "eng") {
     for (i = 0; i < text_eng.length; i++) {
         if(!text_cn[i].classList.contains('d-none')) {
