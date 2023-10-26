@@ -4,6 +4,11 @@ body::before {
     height: 50px;
 }
 
+.nowrap {
+    white-space: nowrap;	
+}
+
+
 .current {
     background-color: aquamarine;
 }
@@ -56,14 +61,122 @@ body::before {
 
 }
 
-
-.nowrap {
-    white-space: nowrap;	
-}
-
 .about_bg {
     background-size: cover; 
     background-image: url(../img/sky.png);
+}
+
+#home350e {
+    animation: fadeInUp 3s;
+}
+
+#homeIntro {
+    animation: fadeIn 2.5s;
+}
+
+/* Photo Gallery */
+.img-gallery {
+    width: 80%;
+    margin: 20px auto 50px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+
+.img-gallery img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.4s; 
+}
+
+.img-gallery img:hover {
+    /* transform: scale(0.8) rotate(-15deg); */
+    transform: scale(1.1);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68,77,136, 0.2);
+}
+
+.full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.full-img img {
+    width: 90%;
+    max-width: 600px;
+}
+
+.imgTxt {
+    position: absolute;
+    top: 85%;
+    color: #fff;
+}
+
+.x {
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+#preImg {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    top: 50%;
+    right: 78%;
+    cursor: pointer;
+}
+
+#nextImg {
+    position: absolute;
+    font-size: 30px;
+    color: #fff;
+    top: 50%;
+    left: 78%;
+    cursor: pointer;
+}
+
+img.tadte_img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    /* width: 200px; */
+  }
+  
+img.tadte_img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+@media(max-width: 960px) {
+    .full-img img {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    #preImg {
+        top: 47%;
+        right: 89%;
+    }
+    
+    #nextImg {
+        top: 47%;
+        left: 89%;
+    }
+
+    .imgTxt {
+        top: 70%;
+    }
 }
 
 /* || VARIABLES */
@@ -99,6 +212,30 @@ body::before {
     /* STANDARD MARGIN */
     --MARGIN: clamp(1em, 2.5vh, 1.5em) 0;
 }
+
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;     
+    }
+
+    100% {
+        opacity: 1;   
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;     
+        transform: translateY(70px);
+    }
+
+    100% {
+        opacity: 1;     
+        transform: translateY(0);
+    }
+}
+
 
 /* || CONTACT */
 
