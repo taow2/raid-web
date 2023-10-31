@@ -1,7 +1,7 @@
 const imgMap = new Map([
-    ["/TADTE_photos/group.jpg", [0, "TADTE_photos/t_350e.jpg", 'Group photo of our CEO(3rd from left) and business partners', '我們CEO(左3)和商業夥伴的團體照']],
+    ["/TADTE_photos/group.jpg", [0, "TADTE_photos/t_350e.jpg", 'Our CEO(3rd from left) and business partners', '我們CEO(左3)和商業夥伴的團體照']],
     ["/TADTE_photos/t_350e.jpg", ["TADTE_photos/group.jpg", "TADTE_photos/negotiate.jpg", '350e at our booth', '展場內的350e']],
-    ["/TADTE_photos/negotiate.jpg", ["TADTE_photos/t_350e.jpg", "TADTE_photos/modules.jpg", 'Introducting products and negotiating business', '介紹產品和洽談生意中']],
+    ["/TADTE_photos/negotiate.jpg", ["TADTE_photos/t_350e.jpg", "TADTE_photos/modules.jpg", 'Introducting products and negotiating', '介紹產品和洽談生意中']],
     ["/TADTE_photos/modules.jpg", ["TADTE_photos/negotiate.jpg", 0, 'REI General Manager introducing modules', '六俊總經理介紹零件產品']],
     ["/img/tadte_map.jpg", [0, 0, '', '']]
 ]);

@@ -186,6 +186,26 @@ img.tadte_img:hover {
     }
 }
 
+@media(max-width: 576px) {
+    .full-img img {
+        margin-top: 0;
+    }
+
+    #preImg {
+        margin-top: 0;
+        top: 47%;
+    }
+    
+    #nextImg {
+        margin-top: 0;
+        top: 47%;
+    }
+
+    .imgTxt {
+        top: 64%;
+    }
+}
+
 /* || VARIABLES */
 
 :root {
