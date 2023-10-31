@@ -115,11 +115,13 @@ body::before {
 }
 
 .full-img img {
+    margin-top: 50px;
     width: 90%;
     max-width: 600px;
 }
 
 .imgTxt {
+    margin-top: 40px;
     position: absolute;
     top: 85%;
     color: #fff;
@@ -138,7 +140,7 @@ body::before {
     position: absolute;
     font-size: 30px;
     color: #fff;
-    top: 50%;
+    top: 52%;
     right: 78%;
     cursor: pointer;
 }
@@ -147,7 +149,7 @@ body::before {
     position: absolute;
     font-size: 30px;
     color: #fff;
-    top: 50%;
+    top: 52%;
     left: 78%;
     cursor: pointer;
 }
@@ -157,7 +159,7 @@ img.tadte_img {
     border-radius: 4px;
     padding: 5px;
     /* width: 200px; */
-  }
+}
   
 img.tadte_img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
@@ -170,17 +172,17 @@ img.tadte_img:hover {
     }
 
     #preImg {
-        top: 47%;
+        top: 50%;
         right: 89%;
     }
     
     #nextImg {
-        top: 47%;
+        top: 50%;
         left: 89%;
     }
 
     .imgTxt {
-        top: 70%;
+        top: 80%;
     }
 }
 
