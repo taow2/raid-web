@@ -111,48 +111,77 @@ body::before {
     display: none;
     align-items: center;
     justify-content: center;
+    grid-template-rows: 20px 600px 20px;
+    grid-template-columns: 20px 650px 20px;
+    grid-template-areas:
+    "x x x"
+    "pre img next"
+    "imgt imgt imgt";
     z-index: 100;
 }
 
+/* .full-img {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+} */
+
 .full-img img {
-    margin-top: 50px;
-    width: 90%;
+    /* margin-top: 50px; */
+    width: 90%; 
     max-width: 600px;
+    grid-area: img;
+    margin-left: 42px;
 }
 
 .imgTxt {
-    margin-top: 40px;
+    /* margin-top: 40px;
     position: absolute;
-    top: 85%;
+    top: 85%; */
     color: #fff;
+    grid-area: imgt;
+    text-align: center;
 }
 
 .x {
-    position: absolute;
+    /* position: absolute;
     top: 10%;
-    right: 5%;
+    right: 5%; */
     font-size: 30px;
     color: #fff;
     cursor: pointer;
+    grid-area: x;
+    margin-top: 100px;
+    text-align: right;
 }
 
 #preImg {
-    position: absolute;
+    /* position: absolute;
+    top: 52%;
+    right: 78%; */
     font-size: 30px;
     color: #fff;
-    top: 52%;
-    right: 78%;
     cursor: pointer;
+    grid-area: pre;
 }
 
 #nextImg {
-    position: absolute;
+    /* position: absolute;
+    top: 52%;
+    left: 78%; */
     font-size: 30px;
     color: #fff;
-    top: 52%;
-    left: 78%;
     cursor: pointer;
+    grid-area: next;
 }
+
 
 img.tadte_img {
     border: 1px solid #ddd;
@@ -165,7 +194,7 @@ img.tadte_img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
-@media(max-width: 960px) {
+/* @media(max-width: 960px) {
     .full-img img {
         width: 80%;
         max-width: 500px;
@@ -186,7 +215,7 @@ img.tadte_img:hover {
     }
 }
 
-@media(max-width: 576px) {
+@media(max-width: 414px) {
     .full-img img {
         margin-top: 0;
     }
@@ -204,7 +233,55 @@ img.tadte_img:hover {
     .imgTxt {
         top: 64%;
     }
-}
+} */
+
+@media(max-width: 768px) {
+
+    .full-img {
+        grid-template-rows: 20px 460px 20px;
+        grid-template-columns: 20px 500px 20px;
+    }
+
+    .full-img img {
+        margin-left: 30px;
+    }
+
+} 
+
+@media(max-width: 576px) or (max-height: 650px) {
+
+    .full-img {
+        grid-template-rows: 20px 280px 20px;
+        grid-template-columns: 20px 300px 20px;
+    }
+
+    .full-img img {
+        margin-left: 24px;
+    }
+
+} 
+
+/* @media(min-height: 650px) and (max-width: 576px) {
+    .full-img img {
+        margin-top: 300px;
+    }
+
+    .x {
+        margin-top: 300px;
+    }
+
+    #preImg {
+        margin-top: 300px;
+    }
+    
+    #nextImg {
+        margin-top: 300px;
+    }
+
+    .imgTxt {
+        margin-top: 300px;
+    }
+}  */
 
 /* || VARIABLES */
 

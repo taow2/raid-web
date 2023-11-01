@@ -8,10 +8,12 @@ const imgMap = new Map([
 
 var fullImgBox = document.getElementById("fullImgBox");
 var fullImg = document.getElementById("fullImg");
+var nav = document.getElementById("nav_id");
 
 function openFullImg(pic) {
-    fullImgBox.style.display = "flex";
+    fullImgBox.style.display = "grid";
     fullImg.src = pic;
+    nav.style.display = "none";
 
     checkArrow(pic);
     getImgTxt(pic);
@@ -19,6 +21,8 @@ function openFullImg(pic) {
 
 function closeFullImg() {
     fullImgBox.style.display = "none";
+    nav.style.display = "block";
+
 }
 
 function getPreImg() {
